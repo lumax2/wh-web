@@ -30,7 +30,7 @@
             <Form ref="formLogin" :model="formLogin" :rules="ruleLogin">
                 <div class="wrap_conter">
                     <ul>
-                        <li><h2>用户登录</h2></li>
+                        <li><h2>准备出发</h2></li>
                         <li>
                             <div class="name-password-error" v-if="this.$store.state.ifSign">用户名或密码错误</div>
                             <dl>
@@ -44,7 +44,7 @@
                                     <Icon type="ios-locked-outline" slot="prepend"></Icon></Input>
                                 </FormItem>
                                 <FormItem>
-                                    <Button type="primary" @click="login('formLogin')" style="width: 250px">登录</Button>
+                                    <Button type="primary" @click="login('formLogin')" style="width: 250px">出发</Button>
                                 </FormItem>
                             </dl>
                         </li>
